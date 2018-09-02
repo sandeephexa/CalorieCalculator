@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+    <title>Calorie & Meal Tracker</title>
+</head>
+<body>
+
+    <nav>
+        <div class="nav-wrapper blue">
+            <div class="container">
+                <a href="#" class="brand-logo center">Tacolorie</a>
+                <ul class="right">
+                   <li><a href="#" class="clear-btn btn blue lighten-3">Clear All</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <br>
+    <div class="container">
+        <div class="card">
+            <div class="card-content">
+                <span class="card-title">Add meal/ Food item</span>
+                <form  class="col">
+                    <div class="row">
+                        <div class="input-field col s6">
+                            <input type="text"  id="item-name" placeholder="Add item">
+                            <label for="item-name">Meal</label>
+                        </div>
+                        <div class="input-field col s6">
+                                <input type="number"  id="item-calories" placeholder="Add calories">
+                                <label for="item-calories">Calorie</label>
+                        </div>
+                        <button class="add-btn btn blue darken-3"><i class="small material-icons">add</i> Add meal</button>
+                        <button class="update-btn btn orange"><i class="small material-icons">edit</i> Update Meal</button>
+                        <button class="delete-btn btn red"> <i class="small material-icons">delete</i> Delete Meal</button>
+                        <button class="back-btn btn grey pull-right "><i class="small material-icons">arrow_back</i> Back</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <!-- calarie count -->
+        <h3 class="center-align">Total calories: <span class="total-calories">0</span></h3>
+        <!-- item list -->
+        <ul class="collection" id="item-list">
+            <!-- <li class="collection-item" id="item-0"><strong>Steak Dinner : <em>1200 calories</em></strong>
+               <a href="#" class="secondary-content"> <i class="fas fa-pen"></i></a>
+            </li>
+            <li class="collection-item" id="item-0"><strong>Cookies : <em>400 calories</em></strong>
+                <a href="#" class="secondary-content"> <i class="fas fa-pen"></i></a>
+             </li>
+             <li class="collection-item" id="item-0"><strong>Eggs  : <em>300 calories</em></strong>
+                <a href="#" class="secondary-content"> <i class="fas fa-pen"></i></a>
+             </li> -->
+             
+        </ul>
+
+    </div>
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
